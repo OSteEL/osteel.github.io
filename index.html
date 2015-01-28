@@ -2,23 +2,54 @@
 <html>
     <head>
         <title>Yannick Chenot - Web Developer</title>
+        
+        <link href="favicon.ico" rel="icon">
+        
         <style type="text/css">
             body {
-                font-family: verdana, arial;
-                text-align: center;
+                font-family: arial, verdana;
             }
-            Body > div {
-                margin-top: 150px;
+            body > div {
+                width: 280px;
+                margin: 150px auto 0 auto;
+            }
+            h1, h2, h3 {
+                font-family: 'Courier New';
+            }
+            h2::after {
+                content: '_';
+            }
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            ul > li {
+                line-height: 26px;
+            }
+            ul > li::before {
+                content: '* ';
+            }
+            ul > li > a {
+                color: #000;
+                text-decoration: none;
+            }
+            ul > li > a:hover {
+                text-decoration: none;
+                border-bottom: 1px dotted #000;
             }
         </style>
     </head>
     <body>
         <div>
-            <img src="avatar.png" alt="Avatar"/>
-            <h1>OSteEL</h1>
-            <p>is</p>
-            <h2>Yannick Chenot - Web Developer</h2>
-            <p>Not much to see here, eh? Try <a href="http://blog.osteel.me">my blog</a></p>
+            <h1>Yannick Chenot</h1>
+            <h2>Web Developer</h2>
+            <ul>
+                <li><a href="http://blog.osteel.me">Blog</a></li>
+                <li><a href="yannick_chenot_cv.pdf">CV</a></li>
+                <li><a href="https://twitter.com/osteel">Twitter</a></li>
+                <li><a href="https://github.com/OSteEL">GitHub</a></li>
+                <li><a href="mailto:yannickchenot@gmail.com">Contact</a></li>
+            </ul>
         </div>
     </body>
 </html>
