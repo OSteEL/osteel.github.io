@@ -20,7 +20,7 @@
                 font-family: 'Courier New';
             }
             h2 {
-                font-size: 1.3em;
+                font-size: 1.15em;
             }
             h2::after {
                 content: '_';
@@ -43,6 +43,33 @@
                 text-decoration: none;
                 border-bottom: 1px dotted #515151;
             }
+            form {
+                text-align: center;
+            }
+            form input, textarea, button {
+                display: inline-block;
+                border-radius: 4px;
+                font-family: Helvetica, Arial, Verdana;
+                margin-bottom: 0.75rem;
+                font-size: 0.75rem;
+            }
+            form input, textarea {
+                width: 95%;
+                border: 1px solid #eee;
+                color: #515151;
+                padding: 6px;
+            }
+            form button {
+                padding: 5px;
+                color: rgba(255, 255, 255, 0.6);
+                background-color: #202020;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                cursor: pointer;
+                width: 100px;
+            }
+            form button:hover {
+               color: #fff;
+            }
 
             @media (max-width: 800px) {
                 body > div {
@@ -54,15 +81,21 @@
     <body>
         <div>
             <h1>Yannick Chenot</h1>
-            <h2>Senior PHP Developer</h2>
+            <h2>Senior Backend Developer</h2>
             <ul>
                 <li><a href="http://tech.osteel.me">Blog</a></li>
                 <li><a href="https://drive.google.com/file/d/1pzToeB4IRDmLIvqNbBx38E6S9g3-oFV5">CV</a></li>
                 <li><a href="https://uk.linkedin.com/in/yannickchenot">LinkedIn</a></li>
                 <li><a href="https://github.com/osteel">GitHub</a></li>
                 <li><a href="https://twitter.com/osteel">Twitter</a></li>
-                <li><a href="mailto:contact@yannickchenot.com">Contact</a></li>
             </ul>
+            <h2>Get in touch</h2>
+            <form action="https://formspree.io/maypkjao" method="POST">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
         </div>
     </body>
 </html>
